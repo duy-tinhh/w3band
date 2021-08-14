@@ -250,6 +250,68 @@ html {
     line-height: 24px;
 }
 
+/* Tickets CSS */
+
+.places-lists {
+    margin: 32px -8px 0 -8px;
+    padding: 48px;
+}
+
+.place-item {
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 8px;
+    
+    
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    color: #757575;
+    margin-top: 15px;
+}
+
+.place-description {
+    margin-top: 15px;
+    
+}
+
+.place-buy-btn {
+    display: inline-block;
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    margin-top: 15px;
+    /* margin-bottom: 16px; */
+
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
 
 #footer {
 
