@@ -22,34 +22,66 @@ html {
     background-color: #000;
 }
 
-#nav {
-
+#nav, .subnav {
+    list-style-type: none;
 }
 
 #nav li {
     display:  inline-block;
-
+    position: relative;
 }
 
-#nav li a {
-    color: #fff;
+#nav > li > a {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#nav  li  a {
+    /* color: #fff; */
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
 }
 
-#nav li:hover a {
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a, #nav > li:hover > a {
     color: #000;
     background-color: #ccc;
 }
 
 #nav .subnav {
     display: none;
+    min-width: 160px;
+    position:absolute;
+    top:100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 
-#slider {
+#nav .subnav li {
+    width: 100%;
+}
 
+#nav .subnav a {
+    color: #000;
+    display: block;
+    height: 38px;
+}
+
+/* #nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+} */
+
+#slider {
+    min-height: 500px;
+    /* background-color: #333; */
 }
 
 #content {
