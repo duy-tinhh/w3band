@@ -15,6 +15,9 @@ html {
     4.Kiểu dáng ( kiểu chữ, hình tròn, hình vuông....)
 */
 
+.clear {
+    clear: both;
+}
 
 
 #header {
@@ -181,6 +184,30 @@ html {
     text-align: justify;
     line-height: 1.4;
 }
+
+#content .member-list {
+    margin-top: 48px;
+    width: 100%;
+    /* overflow: hidden; */
+    /* margin-bottom: 46px; */
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name {
+    
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 150px;
+    border-radius: 4px;
+}
+
 #footer {
 
 }
