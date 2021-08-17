@@ -15,10 +15,58 @@ html {
     4.Kiểu dáng ( kiểu chữ, hình tròn, hình vuông....)
 */
 
+/* Common  */
+
+.row {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 100%;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
 .clear {
     clear: both;
 }
 
+.pull-right {
+    float: right !important;
+}
 
 #header {
     height: 46px;
@@ -158,7 +206,7 @@ html {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -192,11 +240,7 @@ html {
     /* margin-bottom: 46px; */
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100%/3);
-    text-align: center;
-}
+
 
 #content .member-name {
     
@@ -253,16 +297,9 @@ html {
 /* Tickets CSS */
 
 .places-lists {
-    margin: 32px -8px 0 -8px;
+    margin-top: 32px;
+    margin-bottom: 0;
     padding: 48px;
-}
-
-.place-item {
-    width: calc(100% / 3);
-    float: left;
-    padding: 0 8px;
-    
-    
 }
 
 .place-img {
@@ -295,7 +332,7 @@ html {
     
 }
 
-.place-buy-btn {
+.btn {
     display: inline-block;
     border: none;
     padding: 8px 16px;
@@ -304,10 +341,11 @@ html {
     text-decoration: none;
     margin-top: 15px;
     /* margin-bottom: 16px; */
+    cursor: pointer;
 
 }
 
-.place-buy-btn:hover {
+.btn:hover {
     background-color: #ccc;
     color: #000;
 }
@@ -432,3 +470,46 @@ html {
         transform: rotateY(0);
     }
 }
+
+
+/* Contact form */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-input {
+    font-size: 15px;
+}
+
+.contact-input .form-control {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+    width: 100%;
+    outline: ;
+}
+
+.contact-info i[class*= 'ti-'] {
+    width: 30px;
+    display: inline-block;
+
+}
+
+/* .contact-input .form-submit-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 8px 16px;
+    float: right;
+}
+
+.contact-input .form-submit-btn:hover {
+    color: #000;
+    background-color: #ccc;
+} */
